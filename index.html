@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	  
+	<title>summnr</title>
+	<link type="text/css" rel="stylesheet" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" href="css/jquery.mobile-1.0b3.css" />
+	<!--link rel="stylesheet" href="http://code.jquery.com/mobile/1.0b3/jquery.mobile-1.0b3.min.css" /-->
+	
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.3.min.js"></script>
+	<!--script type="text/javascript" src="js/jquery.mobile-1.0b3.js"></script-->
+	<script type="text/javascript" src="http://code.jquery.com/mobile/1.0b3/jquery.mobile-1.0b3.min.js"></script>
+
+</head>
+
+<body>
+
+<!-- Start of first page: #one -->
+<div data-role="page" id="foo">
+
+	<div data-role="header" data-fullscreen="true" data-position="fixed">
+		<h1>Summnr</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" id="one">	
+		<form method="get" action="#">
+
+			<h3>Sign In</h3>
+			
+			<div data-role="fieldcontain">
+	         <label for="name" class="ui-input-text">Username</label>
+	         <input type="text" value="">
+			</div>
+
+			<div data-role="fieldcontain">
+	         <label for="name" class="ui-input-text">Password</label>
+	         <input type="text" value="">
+			</div>
+
+			<p><a href="#two" data-theme="a" data-role="button">Sign Up</a></p>	
+		
+	</form>
+		
+		
+	</div><!-- /content -->
+
+	
+	<div data-role="footer" data-theme="a"  data-fullscreen="true" data-position="fixed">
+		<div data-role="navbar">
+			<ul class="ui-grid-b">
+				<li><a data-iconpos="top" data-icon="check" href="#tasks">Tasks</a></li>
+				<li><a data-iconpos="top" data-icon="alert" href="#messages">Messages</a></li>
+				<li><a data-iconpos="top" data-icon="grid" href="#events">Events</a></li>
+				<li><a data-iconpos="top" data-icon="plus" href="#add">Add</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+</div><!-- /page one -->
+
+
+<!-- Start of second page: #tasks -->
+<div data-role="page" id="tasks" data-theme="a" class="type-interior">
+
+	<div data-role="header">
+		<a href="index.html" data-role="button" data-icon="grid" data-iconpos="notext">Link button</a>
+		<h1>Tasks</h1>
+
+	</div><!-- /header -->
+
+	<div data-role="content">	
+				
+					<ul data-role="listview" data-theme="c" class="ui-checklist">
+					<li data-role="list-divider" data-theme="b" data-icon="plus" role="heading">
+						<a href="#single-task">Hellish Bar-B-Q, Oct 3, 2010 </a>
+					</li>
+					<li>
+						<input type="checkbox" id="checkbox-1a" name="checkbox-1a">
+						<label for="checkbox-1a">Gather Firewood</label>
+					</li>
+					<li>
+						<input type="checkbox" id="checkbox-2a" name="checkbox-3a">
+						<label for="checkbox-2a">Pick up Meat</label>
+					</li>
+					<li data-role="list-divider" data-theme="b" data-icon="plus" role="heading">
+						<a href="#single-task">Mad Men Mondays, Oct 4, 2010 </a>
+					</li>
+					<li>
+						<input type="checkbox" id="checkbox-3a" name="checkbox-3a">
+						<label for="checkbox-3a">Bring Scotch</label>
+					</li>
+				</ul>
+				
+				
+	</div><!-- /content -->
+
+	
+	<div data-role="footer" data-fullscreen="true" data-position="fixed">
+		<div data-role="navbar">
+		<ul class="ui-grid-b">
+			<li><a data-iconpos="top" data-icon="check" class="ui-btn-active" href="#tasks">Tasks</a></li>
+			<li><a data-iconpos="top" data-icon="alert" href="#messages">Messages</a></li>
+			<li><a data-iconpos="top" data-icon="grid" href="#events">Events</a></li>
+			<li><a data-iconpos="top" data-icon="plus" href="#add">Add</a></li>
+		</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+
+<!-- Start of third page: #messages -->
+<div data-role="page" id="messages">
+
+	<div data-role="header" data-theme="b">
+		<a href="index.html" data-role="button" data-icon="grid" data-iconpos="notext">Link button</a>
+		<h1>Messages</h1>
+
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		
+		<div class="content-primary">
+		<ul data-role="listview" class="ui-listview">
+			
+			<li class="ui-li ui-body-c ui-btn ui-btn-icon-right ui-li-has-arrow">
+				<a href="#single-message">
+				<p class="ui-li-aside ui-li-desc"><strong>9:18</strong>AM</p>
+				<h3 class="ui-li-heading">Michael Enslow</h3>
+				<p class="ui-li-desc"><strong>Drink Night Planning</strong></p>
+				<p class="ui-li-desc">In preparation for the upcoming conference in Boston, we need to start gathering a list of sponsors and speakers.</p>
+				<span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span>
+				</a>
+			</li>
+			
+			<li class="ui-li ui-body-c ui-btn ui-btn-icon-right ui-li-has-arrow">
+				<a href="#single-message">
+				<p class="ui-li-aside ui-li-desc"><strong>12:18</strong>PM</p>
+				<h3 class="ui-li-heading">Derek Bruno</h3>
+				<p class="ui-li-desc"><strong>BBQ Planning</strong></p>
+				<p class="ui-li-desc">In preparation for the upcoming conference in Boston, we need to start gathering a list of sponsors and speakers.</p>
+				<span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span>
+				</a>
+			</li>
+		</ul>
+		</div>
+		
+		<div class="content-secondary">
+			<ul data-role="listview" data-theme="c">
+				<li><a href="acura.html">Stephen</a><span class="ui-li-count ui-btn-up-c ui-btn-corner-all">12</span></li>
+				<li><a href="audi.html">jQuery</a><span class="ui-li-count ui-btn-up-c ui-btn-corner-all">12</span></li>
+				<li><a href="bmw.html">Bill</a><span class="ui-li-count ui-btn-up-c ui-btn-corner-all">12</span></li>
+			</ul>
+		</div>
+		
+	</div><!-- /content -->
+
+	
+	<div data-role="footer"  data-fullscreen="true" data-position="fixed">
+		<div data-role="navbar">
+		<ul class="ui-grid-b">
+			<li><a data-iconpos="top" data-icon="check" href="#tasks">Tasks</a></li>
+			<li><a data-iconpos="top" data-icon="alert" class="ui-btn-active" href="#messages">Messages</a></li>
+			<li><a data-iconpos="top" data-icon="grid" href="#events">Events</a></li>
+			<li><a data-iconpos="top" data-icon="plus" href="#add">Add</a></li>
+		</ul>
+	</div><!-- /navbar -->
+	</div><!-- /footer -->
+</div><!-- /page popup -->
+
+<!-- Start of fourth page: #events -->
+<div data-role="page" id="events" data-theme="a">
+
+	<div data-role="header">
+		<a href="index.html" data-role="button" data-icon="grid" data-iconpos="notext">Link button</a>
+		<h1>Events</h1>
+
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		
+		<ul data-role="listview" data-split-icon="plus" class="ui-listview">
+				<li class="ui-btn ui-l ui-body-c ui-li-has-thumb ui-btn-icon-right ui-li-has-arrow">
+				<a href="#singlevent">
+					<img src="img/album-bb.jpg" class="ui-li-thumb">
+					<h3 class="ui-li-heading">Neighborday Potluck</h3>
+					<p class="ui-li-desc">Sunday, October 3rd</p>
+					<span class="ui-li-count ui-btn-up-c ui-btn-corner-all">4</span>
+					<span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span>
+				</a>
+				<a href="#"></a>
+			</li>
+			<li class="ui-btn ui-l ui-body-c ui-li-has-thumb ui-btn-icon-right ui-li-has-arrow">
+				<a href="#singlevent">
+					<img src="img/album-hc.jpg" class="ui-li-thumb">
+					<h3 class="ui-li-heading">Mad Men Monday</h3>
+					<p class="ui-li-desc">Monday, October 4th</p>
+					<span class="ui-li-count ui-btn-up-c ui-btn-corner-all">2</span>
+					<span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span>
+				</a>
+				<a href="#"></a>
+			</li>
+			<li class="ui-btn ui-l ui-body-c ui-li-has-thumb ui-btn-icon-right ui-li-has-arrow">
+				<a href="#singlevent">
+					<img src="img/album-p.jpg" class="ui-li-thumb">
+					<h3 class="ui-li-heading">Drinks at the Duck</h3>
+					<p class="ui-li-desc">Friday. October 7th</p>
+					<span class="ui-li-count ui-btn-up-c ui-btn-corner-all">8</span>
+					<span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span>
+				</a>
+				<a href="#"></a>
+			</li>
+			</ul>
+		
+	</div><!-- /content -->
+
+	
+	<div data-role="footer" data-fullscreen="true" data-position="fixed">
+		<div data-role="navbar">
+			<ul class="ui-grid-b">
+				<li><a data-iconpos="top" data-icon="check" href="#tasks">Tasks</a></li>
+				<li><a data-iconpos="top" data-icon="alert" href="#messages">Messages</a></li>
+				<li><a data-iconpos="top" data-icon="grid" class="ui-btn-active" href="#events">Events</a></li>
+				<li><a data-iconpos="top" data-icon="plus" href="#add">Add</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+
+<!-- Start of fifth page: #add -->
+<div data-role="page" id="add" data-theme="c">
+
+	<div data-role="header" data-theme="a">
+		<a href="index.html" data-role="button" data-icon="grid" data-iconpos="notext">Link button</a>
+		<h1>Add</h1>
+	
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<ul data-role="listview" data-theme="d" class="ui-listview ui-listview-inset ui-corner-all">
+			<li class="ui-corner-top"><a href="#random" data-transition="flip">Players</a><span class="ui-li-count ui-btn-up-c ui-btn-corner-all">12</span></li>
+			<li><a href="#random" data-transition="flip">Message</a></li>
+			<li><a href="#random" data-transition="flip">Type</a></li>
+			<li><a href="#random" data-transition="flip">Date</a></li>
+			<li class="ui-corner-bottom"><a href="#random" data-transition="flip">Location</a></li>
+		</ul>
+		
+		<ul data-role="listview" data-theme="d" class="ui-listview ui-listview-inset ui-corner-all">
+			<li class="ui-corner-top"><a href="#random" data-transition="flip">Assign Tasks</a><span class="ui-li-count ui-btn-up-c ui-btn-corner-all">12</span></li>
+			<li class="ui-corner-bottom"><a href="#random" data-transition="flip">Reminders</a></li>
+		</ul>
+		
+		<p><a href="#two" data-theme="b" data-role="button">Create Event</a></p>	
+		
+	</div><!-- /content -->
+
+	<div data-role="footer"  data-fullscreen="true" data-position="fixed">
+		<div data-role="navbar">
+		<ul class="ui-grid-b">
+			<li><a data-iconpos="top" data-icon="check" href="#tasks">Tasks</a></li>
+			<li><a data-iconpos="top" data-icon="alert" href="#messages">Messages</a></li>
+			<li><a data-iconpos="top" data-icon="grid" href="#events">Events</a></li>
+			<li><a data-iconpos="top" data-icon="plus" class="ui-btn-active" href="#add">Add</a></li>
+		</ul>
+	</div><!-- /navbar -->
+	</div><!-- /footer -->
+</div><!-- /page popup -->
+
+<!-- single message -->
+<div data-theme="c" data-role="page" data-add-back-btn="true" class="ui-page ui-body-d" id="single-message">
+	<div data-theme="b" data-role="header" class="ui-header ui-bar-b" role="banner">
+		<div class="ui-title">Michael Enslow</div>
+	</div>
+	<div data-role="content" class="ui-content" role="main">
+		<ul data-role="listview" class="ui-listview">
+			<li class="ui-li ui-li-static ui-body-d">	
+				<p class="ui-li-aside ui-li-desc"><strong>30 </strong>mins</p>
+				<h3 class="ui-li-heading">Michael Enslow</h3>
+				<p>Hey Stephen, if you're available at 10am tomorrow, we've got a meeting with the jQuery team.</p>
+			</li>
+			<li class="ui-li ui-li-static ui-body-d">
+				<p class="ui-li-aside ui-li-desc"><strong>2 </strong>hrs</p>
+				<h3 class="ui-li-heading">Michael Enslow</h3>
+				<p>In preparation for the upcoming conference in Boston, we need to start gathering a list of sponsors and speakers.</p>
+				
+			</li>
+		</ul>
+	</div>
+	
+	<div data-role="footer"  data-fullscreen="true" data-position="fixed">
+		<p class="ui-field-contain ui-body ui-br ui-li ui-li-static ui-body-a" data-role="fieldcontain">
+		<input type="text" value="" id="name" name="name" class="ui-input-text ui-body-null ui-corner-all ui-shadow-inset ui-body-c">
+		</p>	
+	</div><!-- /footer -->
+</div>
+
+<!-- single setting -->
+<div data-theme="c" data-role="page" data-add-back-btn="true" class="ui-page ui-body-c" id="random">
+	<div data-theme="b" data-role="header" class="ui-header ui-bar-b" role="banner">
+		<div class="ui-title">Construction</div>
+	</div>
+	<div data-role="content" class="ui-content" role="main">
+		<ul class="ui-listview  ui-listview-inset ui-corner-all">
+			<li data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li">
+				<div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="index.html" class="ui-link ui-link-inherit" data-direction="reverse" data-rel="back">Caterpillar</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+			<li data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li">
+				<div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="index.html" class="ui-link ui-link-inherit" data-direction="reverse" data-rel="back">Ford</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+			<li data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li">
+				<div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="index.html" class="ui-link ui-link-inherit" data-direction="reverse" data-rel="back">John Deere</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+		</ul>
+	</div>
+</div>
+
+<!-- single event -->
+<div data-theme="c" data-role="page" data-add-back-btn="true" class="ui-page ui-body-c" id="singlevent">
+	<div data-theme="b" data-role="header" class="ui-header ui-bar-b" role="banner">
+		<div class="ui-title">Single Event</div>
+	</div>
+	<div data-role="content" class="ui-content" role="main">
+		<ul data-role="listview" data-theme="d" class="ui-listview ui-listview-inset ui-corner-all">
+			<li class="ui-corner-top"><a href="#random" data-transition="flip">Players</a><span class="ui-li-count ui-btn-up-c ui-btn-corner-all">12</span></li>
+			<li><a href="#random" data-transition="flip">Be there dude!</a></li>
+			<li><a href="#random" data-transition="flip">BBQ and Cocktails</a></li>
+			<li><a href="#random" data-transition="flip">7:00PM, Sunday, October 12th, 2011</a></li>
+			<li class="ui-corner-bottom"><a href="#random" data-transition="flip">Joe's Backyard</a></li>
+		</ul>
+		
+		<ul data-role="listview" data-theme="d" class="ui-listview ui-listview-inset ui-corner-all">
+			<li class="ui-corner-top"><a href="#random" data-transition="flip">Tasks</a><span class="ui-li-count ui-btn-up-c ui-btn-corner-all">12</span></li>
+			<li class="ui-corner-bottom"><a href="#random" data-transition="flip">Reminders</a></li>
+		</ul>
+		
+		<p><a href="#two" data-theme="b" data-role="button">I'm in!</a></p>
+	</div>
+</div>
+
+<!-- single task -->
+<div data-theme="c" data-role="page" data-add-back-btn="true" class="ui-page ui-body-c" id="single-task">
+	<div data-theme="b" data-role="header" class="ui-header ui-bar-b" role="banner">
+		<div class="ui-title">Add Tasks</div>
+	</div>
+	<div data-role="content" class="ui-content" role="main">
+		<ul data-role="listview" data-theme="d" class="ui-listview ui-listview-inset ui-corner-all">
+			<li data-icon="check" class="ui-corner-top"><a href="#random" data-transition="flip">Gather firewook</a></li>
+			<li data-icon="check"><a href="#random" data-transition="flip">Be there dude!</a></li>
+			<li data-icon="check"><a href="#random" data-transition="flip">Custom Cocktail</a></li>
+			<li data-icon="check"><a href="#random" data-transition="flip">Vegetables</a></li>
+			<li data-icon="check" class="ui-corner-bottom"><a href="#random" data-transition="flip">Beer</a></li>
+		</ul>
+		
+		<ul data-role="listview" data-theme="d" class="ui-listview ui-listview-inset ui-corner-all">
+			<li class="ui-corner-top"><a href="#random" data-transition="flip">Billy Cruddup</a><span class="ui-li-count ui-btn-up-c ui-btn-corner-all">12</span></li>
+			<li class="ui-corner-bottom"><a href="#random" data-transition="flip">Sally Field</a></li>
+		</ul>
+		
+		<p><a href="#two" data-theme="b" data-role="button">Add New Task</a></p>
+	</div>
+</div>
+
+</body>
+</html>

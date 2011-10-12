@@ -1,0 +1,89 @@
+
+/* reset */	
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+.clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}
+.clearfix:after{clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0}* html .clearfix,*:first-child+html .clearfix{zoom:1}
+
+/* layout */	
+
+body { font-family: Helvetica, arial, sans-serif; color: #ccc; font-size: 75%; line-height: 1.5; /*12/18*/ }
+
+a:link, a:visited { color: #1E638D; font-weight: bold; text-decoration: none}
+	a:hover { color: #3399CC}
+
+/* grid */	
+
+.container { clear: left}
+.float { float: left}
+
+.section { }
+.aside { }
+
+/* type */
+
+h1, h2, h3, h4, h5, h6	{ position: relative}
+h1, h2	{ line-height: 36px; margin-bottom: 18px}
+h1, h2, h3, h4	{ }
+h3, h4, h5, h6	{ line-height: 18px}
+h1	{ font-size: 36px}
+h2	{ font-size: 28px}
+h3	{ font-size: 22px}
+h4	{ font-size: 18px}
+h5	{ font-size: 15px}
+h6	{ font-size: 13px}
+
+p, pre, address	{ font-size: 13px; line-height: 18px; position: relative}
+abbr, code, kbd,
+samp, small, var	{ line-height: 15px; }
+ul, ol, dl, dialog	{ font-size: 13px; line-height: 18px; position: relative; margin-top: 18px; margin-bottom: 18px}
+li ul, li ol, ul ul, ol ol	{ margin-top: 0; margin-bottom: 0}
+li h1, li h2, li h3,
+li h4, li h5, li h6,
+li p	{ }
+
+form, legend, label	{ font-size: 13px; line-height: 18px}
+legend	{ position: relative}
+input, textarea	{ font-size: 12px}
+    
+/* forms */
+
+form {  }
+legend { padding-bottom: 18px; }
+label { padding-top: 5px; margin: 0 0 11px 18px; float: left; display: block; }
+input[type="text"],
+input[type="password"],
+input[type="select"],
+input[type="search"] { border: solid 1px #ccc; height: 16px; padding: 1px 2px; display: block; }
+input[type="file"] { border: none; }
+textarea  { border: solid 1px #ccc; height: 16px; padding: 0 2px; display: block; line-height: 18px; }
+select { display: block; margin-top: 2px; margin-bottom: 0; }
+input[type="submit"],
+input[type="reset"],
+input[type="button"] { margin-left: 12px; margin-bottom: 0; }
+				
+.radio	{ margin: 6px 0 0 1px; float: left; display: block; clear: left; }
+.radio-label { margin: 0 0 13px 0; padding-left: 18px; float: none; display: block; clear: none; }
+
+.checkbox { margin: 6px 0 0 1px; float: left; display: block; clear: left; }
+.checkbox-label { margin: 0 0 13px 0; padding-left: 18px; float: none; display: block; clear: none; }
+
+/* header */	
+
+.section.head { background-color: #000; width: 100%; }
+	.section .header { overflow: hidden; }
+		.hGroup { width: 220px; text-align: center; padding: 70px 0;}
+		.hGroup h1 { color: #fff; }
+
+/* article */	
+
+					
+/* ads */
+
+
+/* footer */					
+
+.footer { display: block; text-align: center; }
+	.footer ul { padding: 30px; }
+	.footer li { font-size: 12px; display: inline; padding: 0 5px; }	
