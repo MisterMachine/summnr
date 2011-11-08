@@ -8,6 +8,10 @@
 </head>
 <body>
 
+<% if session[:user_id] %>
+  <%= link_to 'Users', users_path %>&nbsp;|&nbsp;<%= link_to 'Logout', logout_path, :method => :delete %>
+<% end %>
+
 <%= yield %>
 
 </body>
